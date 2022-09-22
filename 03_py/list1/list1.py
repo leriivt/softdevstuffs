@@ -1,3 +1,6 @@
+'''
+DISCO : An element in a list can be accesed in the form LISTNAME[INDEX]
+'''
 def first_last6(nums):
     return nums[0] == 6 or nums[len(nums)-1] == 6 #checks if either first or last in list is 6
 
@@ -20,6 +23,9 @@ print(first_last6([1, 2, 2, 3]))
 print("expecting: False\n")
 print("*****")
 
+'''
+DISCO : Creating a list just requires writing out the list with its desired elements.
+'''
 def make_pi():
     return [3,1,4] #list with first 3 digits of pi in sequence
 
@@ -74,6 +80,9 @@ print(rotate_left3([7, 0, 0]))
 print("expecting: [0, 0, 7]\n")
 print("*****")
 
+'''
+DISCO : max() is a built in python function that can return the greatest value of the given parameters.
+'''
 def max_end3(nums):
     m = max(nums[0], nums[2]) #takes greater of first and last element
     return [m,m,m] #returns list with all elements that are m
@@ -104,7 +113,7 @@ print("expecting: 0\n")
 print("*****")
 
 def middle_way(a, b):
-    return [a[1],b[1]] #returns new list with middle elements of list a and b
+    return [a[1], b[1]] #returns new list with middle elements of list a and b
 
 print(middle_way([1, 2, 3], [4, 5, 6]))
 print("expecting: [2, 5]\n")
