@@ -17,7 +17,7 @@ Gets a list of the keys in the krewes
 Randomly iterates through all the list of keys to determine whether it contains values or not. If the key is empty, it will remove the key and continue on. If all the keys’ lists are empty, return ERROR. 
 When one of the keys is found to have a non-empty list, this key is chosen. 
 Choose a random index from list associated with chosen key
-Return value found at the random index. 
+Return value found at the chosen random index of the list associated with the chosen key
 '''
 from random import randint
 
