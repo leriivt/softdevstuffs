@@ -4,17 +4,20 @@ Soft Dev
 K04 -- Random Devo from Krewes
 2022-09-27
 time spent: 4 hrs
+
 DISCO: 
 You can get the length of a dictionary through just using the method len(dictionary) on it.  
 You have to import randint from random to use it
-QCC: Would it be faster to take all of the lists associated with the keys, make a giant list, and then pick a random value from the lists? 
+
+QCC: Would it be faster to take all of the lists associated with the keys, make a giant list, and then pick a random value from the giant list? 
+
 OPS SUMMARY: 
 If krewes is empty, return ERROR
 Gets a list of the keys in the krewes
 Randomly iterates through all the list of keys to determine whether it contains values or not. If the key is empty, it will remove the key and continue on. If all the keys’ lists are empty, return ERROR. 
 When one of the keys is found to have a non-empty list, this key is chosen. 
 Choose a random index from list associated with chosen key
-Return value at the random index of the associated key. 
+Return value found at the random index. 
 '''
 from random import randint
 
@@ -28,24 +31,23 @@ krewes3 = {}
 krewes4 = {1:["1"], 2:[]}
 krewes5 = {1:[], 2:[]}
 
-def getRandom(dictionary):
-    
-    if len(dictionary) == 0:
+def getRandom(dictionary):    
+    if len(dictionary) == 0: #checks if the dictionary is empty
         return "ERROR: Dictionary has no values"       
-    key = []
+    keys = []
     for e in dictionary.keys(): #gets all the keys
-        key.append(e)
+        keys.append(e)
     while True:
-        if len(key) == 0:
+        if len(keys) == 0: #checks if no more valid keys
             return "ERROR: all lists empty"
-        period = key[randint(0, len(key)-1)]  #chooses a random key
-        if len(dictionary.get(period)) == 0:
-            key.remove(period)
-        else:
-            r = randint(0, len(dictionary.get(period))-1) #chooses random index of the list associated with the random key
-            k = dictionary.get(period)  #gets the list associated with the random key
-            break
-    return k[r] #returns value at random index of random list
+        period = keys[randint(0, len(keys)-1)]  #chooses a random key of those remaining
+        k = dictionary.get(period)  #gets the list associated with the random key
+        if len(k) == 0:  #check if random key's list is empty
+            keys.remove(period)  #if empty, remove the random key from list of keys
+        else: #random key's associated list is not empty, random key is now chosen
+            r = randint(0, len(k)-1) #chooses random index from list associated with chosen key
+            break #exits while loop
+    return k[r] #returns value at random index of chosen key's list
 
 
 print(getRandom(krewes1))
