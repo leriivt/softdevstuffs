@@ -44,12 +44,14 @@ EX: Random value a, is chosen as 47.2,
 -Key-pair 2 = ('Business and Financial operations': 5.0). 47.2 is not betweeen (6.2,11.2), currentval = 11.2
 -Keep going until we get key-pair where 47.2 is between (currentval, currentval + percentage) and then return the occupation
 associated with that key-pair.
-Use dict.items() to get a list of the key-value pairs
 '''
+
 def weighted_random(dnary):
-    randval = rng.uniform(0,dnary["Total"]) ## Between 0 and the total percentage
+    randval = rng.uniform(0, 100)
     print(randval)
     current_val = 0
+    if randval >= dnary["Total"]: #to account of the 0.2% not in total
+        return "Other"
     for i in dnary.keys():
         if randval >= current_val and randval < current_val + dnary[i]:
             return i
