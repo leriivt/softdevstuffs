@@ -1,9 +1,9 @@
 '''
-Spreadsheet Saiyans: Shinji Verit
+Spreadsheet Saiyans: Shinji Kusakabe, Verit Li
 SoftDev
 K06 duo mission
 2022-09-30
-Time spent: 0.8 hours
+Time spent: 1.1 hours
 
 DISCO:
 The original string remains unchanged withn using .split()
