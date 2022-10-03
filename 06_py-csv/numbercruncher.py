@@ -48,7 +48,7 @@ associated with that key-pair.
 
 def weighted_random(dnary):
     randval = rng.uniform(0, 100)
-    print(randval)
+#     print(randval)
     current_val = 0
     if randval >= dnary["Total"]: #to account of the 0.2% not in total
         return "Other"
@@ -63,3 +63,14 @@ a = csv_to_dict(occ_file)
 print(a)
 print("\n")
 print(weighted_random(a))
+
+print("\n")
+randchoices = {}
+for i in range(1000):
+    choice = weighted_random(a)
+    if choice in randchoices.keys():
+        randchoices.update({choice: randchoices[choice] + 1})
+    else:
+        randchoices[choice] = 1
+print("Result of 1000 random occupations picked(# is the amount of times it was picked)")
+print(randchoices)
