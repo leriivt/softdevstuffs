@@ -16,7 +16,7 @@ v1
 
 v2
 - __name__ is a special variable that is already assigned
-- whatever is in a string will be pasted verbatim in a terminal
+- whatever is a string and is asked to be printed will be pasted verbatim in a terminal (like print('__name__'))
 - __name__ will still be printed as main in the terminal
 - any print statements will be printed as soon as you access the link
 - it also reprints them if you reload the site too
@@ -29,3 +29,9 @@ v3
 v4
 - if you import app.py and allow the running of app, it would print out '__app__' for print(__name__) instead of '__main__'
 - since you have if __name__== __main__ you can’t run the website from another file, only the file where __main__ is printed in the terminal.
+
+More notes:
+- when trying to return an integer in the function under @app.route("/"), the website will give a TypeError vv
+The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a int.
+
+- Flask takes what is returned and it is read as html (\n doesnt create a new line, but <br> does)
