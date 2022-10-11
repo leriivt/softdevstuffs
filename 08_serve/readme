@@ -1,0 +1,27 @@
+VSM: Verit, Sebastian, Maya
+
+v0
+- whatever is returned in hello_world is displayed on web browser(true for all versions)
+- whatever is printed in the function prints in the terminal
+- the function name doesn’t matter
+- the string in @app.route() needs to follow the localhost url
+
+v1
+- '__main__' won't be printed in terminal since there is no print()
+- same as v0 otherwise
+
+v2
+- __name__ is a special variable that is already assigned
+- whatever is in a string will be pasted verbatim in a terminal
+- __name__ will still be printed as main in the terminal
+- any print statements will be printed as soon as you access the link
+- it also reprints them if you reload the site too
+
+v3
+- debug being True allows editing the function without having to physically rerun the program(only save)
+- debug being False helps make sure the website isn't accidentally altered because whatever you write is not automatically saved in the file
+
+
+v4
+- if you import app.py and allow the running of app, it would print out '__app__' for print(__name__) instead of '__main__'
+- since you have if __name__== __main__ you can’t run the website from another file, only the file where __main__ is printed in the terminal.

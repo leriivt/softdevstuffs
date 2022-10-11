@@ -6,6 +6,10 @@ K08 -- introduction to Flask
 time spent: 0.2
 '''
 
+# Clyde 'Thluffy' Sinclair
+# SoftDev
+# Oct 2022
+
 from flask import Flask
 app = Flask(__name__) #create instance of class Flask
 

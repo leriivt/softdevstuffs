@@ -3,7 +3,7 @@ VSM: Verit, Sebastian, Maya
 SoftDev
 K08 -- introduction to Flask
 2022-10-09
-time spent: 0.5
+time spent: 0.6
 '''
 
 from flask import Flask
@@ -39,7 +39,7 @@ def weighted_random(dnary):
     if randval >= dnary["Total"]: #to account of the 0.2% not in total
         return "Other"
     for i in dnary:
-        if randval >= current_val and randval < current_val + dnary[i]:
+        if randval < current_val + dnary[i]:
             return i
         else:
             current_val += dnary[i]
@@ -53,7 +53,14 @@ heading = \
 SoftDev<br>\n\
 K08 -- introduction to Flask<br>\n\
 2022-10-09<br>\n\
-time spent: 0.1<br><br>\n\n"
+time spent: 0.6<br><br>\n\n"
+
+#returns a formatted string listing all the occupations
+def str_occupations():
+    str = '<br><br>List of occupations:'
+    for job in list(occ_dict.keys())[:-1]:      # ignore 'total'
+        str += '<br>' + job
+    return str
 
 
 
@@ -64,12 +71,11 @@ def hello_world():
     print("the random occupation is...")
     print(rand_occ)
     print()
-    final = heading + rand_occ
+    final = heading + '<br>' + rand_occ
     print(final)
-    return final
+    return final + str_occupations()
 
 
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
     app.run()
-
