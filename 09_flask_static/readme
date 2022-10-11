@@ -1,0 +1,26 @@
+Prediction for foo.html:
+Going to http://localhost:5000/static/foo.html would 
+lead to a website displaying one line "Is this plaintext, though?"
+
+Prediction was true
+
+----------------------------------
+Q: What happens when you access this file
+     via
+      http://localhost:5000/static/foo 
+     ?
+
+Prediction for foo:
+Either everything in foo is diplayed (on one line?) or
+You get an error or
+You get the same thing as http://localhost:5000/static/foo.html
+
+Notes:
+What ends up happening is the web browser downloads foo 
+when http://localhost:5000/static/foo is accessed by user
+and terminal prints 
+127.0.0.1 - - [11/Oct/2022 13:49:15] "GET /static/foo HTTP/1.1" 200 -
+
+
+
+127.0.0.1 - - [11/Oct/2022 14:05:09] "GET /static/foo.html HTTP/1.1" 304 -
