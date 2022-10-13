@@ -1,9 +1,10 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2022
-
-# DEMO 
-# basics of /static folder
+'''
+VSM: Verit, Sebastian, Maya
+SoftDev
+K09 -- static files in Flask
+2022-10-12
+time spent: 0.6
+'''
 
 from flask import Flask
 app = Flask(__name__) 

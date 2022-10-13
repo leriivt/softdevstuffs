@@ -1,5 +1,12 @@
+VSM: Verit, Sebastian, Maya
+SoftDev
+K09 -- static files in Flask
+2022-10-12
+time spent: 0.6
+
+
 Prediction for foo.html:
-Going to http://localhost:5000/static/foo.html would 
+Going to http://localhost:5000/static/foo.html would
 lead to a website displaying one line "Is this plaintext, though?"
 
 Prediction was true
@@ -7,7 +14,7 @@ Prediction was true
 ----------------------------------
 Q: What happens when you access this file
      via
-      http://localhost:5000/static/foo 
+      http://localhost:5000/static/foo
      ?
 
 Prediction for foo:
@@ -16,11 +23,16 @@ You get an error or
 You get the same thing as http://localhost:5000/static/foo.html
 
 Notes:
-What ends up happening is the web browser downloads foo 
+What ends up happening is the web browser downloads foo
 when http://localhost:5000/static/foo is accessed by user
-and terminal prints 
+and terminal prints
 127.0.0.1 - - [11/Oct/2022 13:49:15] "GET /static/foo HTTP/1.1" 200 -
 
-
-
+When you access 127.0.0.1/static/foo.html the terminal prints:
 127.0.0.1 - - [11/Oct/2022 14:05:09] "GET /static/foo.html HTTP/1.1" 304 -
+
+When the web browser receives a HTML file, the text in-between the tags '<html>' and '</html>' will be rendered.
+
+When you try to access any file in the static folder without static/ in the link, it displays a 404 error in the terminal.
+
+The numbers at the end of the lines in terminal like "200," "304" or "404" seem to represent type of request.
