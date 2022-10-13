@@ -21,6 +21,7 @@ Prediction for foo:
 Either everything in foo is diplayed (on one line?) or
 You get an error or
 You get the same thing as http://localhost:5000/static/foo.html
+-----------------------------------
 
 Notes:
 -What ends up happening is the web browser downloads foo
