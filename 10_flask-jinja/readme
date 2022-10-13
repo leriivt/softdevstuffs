@@ -1,0 +1,15 @@
+#Q0: What will happen if you remove render_template from this line? (log your prediction before you pull the trigger...)
+You would get an error in the terminal because the function render_template wouldnt be defined
+
+#Q1: Can all of your teammates confidently predict the URL to use to load this page?
+http://127.0.0.1:5000/my_foist_template
+
+fooooo
+0
+1
+1
+2
+3
+5
+8
+
