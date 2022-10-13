@@ -23,16 +23,21 @@ You get an error or
 You get the same thing as http://localhost:5000/static/foo.html
 
 Notes:
-What ends up happening is the web browser downloads foo
+-What ends up happening is the web browser downloads foo
 when http://localhost:5000/static/foo is accessed by user
 and terminal prints
 127.0.0.1 - - [11/Oct/2022 13:49:15] "GET /static/foo HTTP/1.1" 200 -
 
-When you access 127.0.0.1/static/foo.html the terminal prints:
+-When you access 127.0.0.1/static/foo.html the terminal prints:
 127.0.0.1 - - [11/Oct/2022 14:05:09] "GET /static/foo.html HTTP/1.1" 304 -
+     -When the user accesses 127.0.0.1/static/foo.html through the web browser, a request is made to the web server for the /static/foo.html file
+     which is then passed to the web browser to be rendered
 
-When the web browser receives a HTML file, the text in-between the tags '<html>' and '</html>' will be rendered.
+-When the web browser receives a HTML file, the text in-between the tags '<html>' and '</html>' will be displayed/rendered.
 
-When you try to access any file in the static folder without static/ in the link, it displays a 404 error in the terminal.
+-When you try to access any file in the static folder without static/ in the link, it displays a 404 error in the terminal.
 
-The numbers at the end of the lines in terminal like "200," "304" or "404" seem to represent type of request.
+-The numbers at the end of the lines in terminal like "200," "304" or "404" could represent types of requests of the web server, as in a download,
+rendering, or error.
+
+
