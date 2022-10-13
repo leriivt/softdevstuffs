@@ -6,6 +6,9 @@ K09 -- static files in Flask
 time spent: 0.6
 '''
 
+# DEMO 
+# basics of /static folder
+
 from flask import Flask
 app = Flask(__name__) 
 
