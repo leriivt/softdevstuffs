@@ -1,10 +1,39 @@
+VSM: Verit, Sebastian, Maya
+SoftDev
+K10 -- templates in Flask
+2022-10-13
+time spent: 0.8
+
+QCC:
+What is the point of assigning coll to collection in render_template() argument? What if it is just left as coll?
+You get the error SyntaxError: positional argument follows keyword argument 
+
+DISCO:
+You can import multiple functions from the same module by separating them with commas.
+@app.route() can be used multiple times with different routes to a site
+
 #Q0: What will happen if you remove render_template from this line? (log your prediction before you pull the trigger...)
-You would get an error in the terminal because the function render_template wouldnt be defined
+Prediction: You would get an error in the terminal because the function render_template wouldnt be defined
+Actual result:
+The terminal prints:
+127.0.0.1 - - [13/Oct/2022 20:12:06] "GET /my_foist_template HTTP/1.1" 500 -  
+NameError: name 'render_template' is not defined   
+and the web browser gives the error:
+NameError
+NameError: name 'render_template' is not defined
+and that "The debugger caught an exception in your WSGI application."
+
 
 #Q1: Can all of your teammates confidently predict the URL to use to load this page?
-http://127.0.0.1:5000/my_foist_template
+Prediction: http://127.0.0.1:5000/my_foist_template
 
-fooooo
+#Q2: What is the significance of each argument? Simplest, most concise answer best.
+'model_tmplt.html'refers to the file name of the template flask will use.
+foo="fooooo" tells flask to replace each instance of foo in the template with "fooooo"
+collection=coll tells flask to replace each instance of collection in the template with coll (a list of [0,1,1,2,3,5,8])
+
+predicted website display:
+fooooo 
 0
 1
 1
@@ -12,4 +41,7 @@ fooooo
 3
 5
 8
+
+Actual result: fooooo turned out to be the name of the tab and the list of numbers was just displayed by itself
+
 
