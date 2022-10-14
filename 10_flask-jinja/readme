@@ -26,6 +26,7 @@ and that "The debugger caught an exception in your WSGI application."
 
 #Q1: Can all of your teammates confidently predict the URL to use to load this page?
 Prediction: http://127.0.0.1:5000/my_foist_template
+(true)
 
 #Q2: What is the significance of each argument? Simplest, most concise answer best.
 'model_tmplt.html'refers to the file name of the template flask will use.
