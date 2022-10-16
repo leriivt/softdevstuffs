@@ -2,6 +2,8 @@ two types of requests: one being a request for the box to be displayed (example)
 such as a text submition box. Also a request for an answer to be sent in said box.
 
 
+
+What is printed in the terminal when accessing root:
 ***DIAG: this Flask obj ***
 <Flask 'app'>
 ***DIAG: request obj ***
@@ -21,13 +23,13 @@ Sec-Fetch-Mode: navigate
 Sec-Fetch-Site: none
 Sec-Fetch-User: ?1
 
-
+What is printed in the terminal after entering a username and clicking submit query:
 ***DIAG: this Flask obj ***
 <Flask 'app'>
 ***DIAG: request obj ***
 <Request 'http://127.0.0.1:5000/' [GET]>
 ***DIAG: request.args ***
-ImmutableMultiDict([])
+ImmutableMultiDict([('username', '10'), ('sub1', 'Submit Query')])
 ***DIAG: request.headers ***
 Host: 127.0.0.1:5000
 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0
