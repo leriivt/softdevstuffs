@@ -83,7 +83,7 @@ When is POST used?
 Tried to get print(app) to change output of <Flask 'app'> by changing all instances of the variable name app to apple, but output remained
 the same.
 Can you get it to change? How?
-Possible by changing the file name?
+Possibly by changing the file name?
 
 ----------------------------------------
 
