@@ -11,12 +11,27 @@ Why we care, what this will allow us to do, etc...
 - basic terminal commands
 - have sqlite3 installed
 
-1. create a new SQLite database and start sqlite3 program with the terminal command
-	``` 
-	sqlite3 <DATABASE_NAME>
+1. start the sqlite3 program with the terminal command `sqlite3`
+	1. you can create a new database at the same time instead if you do `sqlite3 <DATABASE_NAME>`
+	2. you can reopen a database or create one at a specfic location with the command `.open <ADDRESS_TO_DATABASE>`
+2. to create a new table use the format:
+	1. `create table <TABLE_NAME>(<FIELD_NAME_0> <DATA_TYPE_0>, <FIELD_NAME_1> <DATA_TYPE_1>, ...);`
+	2. or 
+		```
+		CREATE TABLE <TABLE_NAME> (
+			<FIELD_NAME_0> <DATA_TYPE_0>, 
+			<FIELD_NAME_1> <DATA_TYPE_1>,  
+			...
+		);
+		```
+3. to view all the contents of a table, use the command:
 	```
-	1. y
+	select * from <TABLE_NAME>;
+	```
+4. you can change the format you view table in with:
 	
+			
+			
 1. Step, with `inline code`, and/or...
 1. Step, with
     ```
