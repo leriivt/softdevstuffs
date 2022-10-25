@@ -1,22 +1,21 @@
 # how-to :: sqlite3-shell-basics
 ---
 ## Overview
-Why we care, what this will allow us to do, etc...
+Allows organization of relational databases
 
 ### Estimated Time Cost: 0.5 hrs 
 
 ### Prerequisites:
 
 - How to open a terminal
-- basic terminal commands
 - have sqlite3 installed
 
 1. start the sqlite3 program with the terminal command `sqlite3`
 	1. you can create a new database at the same time instead if you do `sqlite3 <DATABASE_NAME>`
-	2. you can reopen a database or create one at a specfic location with the command `.open <ADDRESS_TO_DATABASE>`
-2. to create a new table use the format:
+	1. you can reopen a database or create one at a specfic location with the command `.open <ADDRESS_TO_DATABASE>`
+1. to create a new table use the format:
 	1. `create table <TABLE_NAME>(<FIELD_NAME_0> <DATA_TYPE_0>, <FIELD_NAME_1> <DATA_TYPE_1>, ...);`
-	2. or 
+	1. or 
 		```
 		CREATE TABLE <TABLE_NAME> (
 			<FIELD_NAME_0> <DATA_TYPE_0>, 
@@ -24,74 +23,45 @@ Why we care, what this will allow us to do, etc...
 			...
 		);
 		```
-3. to view all the contents of a table, use the command:
+1. to view all the contents of a table, use the command:
 	```
 	select * from <TABLE_NAME>;
 	```
-4. you can change the format you view table in with:
-	
+1. you can change the format you output the table in with `.mode <OUTPUT_FORMAT>`
+> output formats include: ascii, box, csv, column, html, insert, json, line, list, markdown, quote, table, tabs, and tcl
+	1. csv example:
+		```
+		hello!,10
+		goodbye,20
+		```
+	2. html example:
+		```
+		<TR><TD>hello!</TD> 
+		<TD>10</TD> 
+		</TR> 
+		<TR><TD>goodbye</TD> 
+		<TD>20</TD> 
+		</TR> 
+		```
+	3. box example:
+		```
+		┌─────────┬─────┐                                                                                                       
+		│   one   │ two │                                                                                                      
+		├─────────┼─────┤                                                                                                       
+		│ hello!  │ 10  │                                                                                                       
+		│ goodbye │ 20  │                                                                                                      
+		└─────────┴─────┘  
+		```
+1. to see a list of tables in the database use the command `.tables`
+
 			
-			
-1. Step, with `inline code`, and/or...
-1. Step, with
-    ```
-    generic code block or terminal command
-    ```
-   and/or...
-    ```javascript
-    var foo = "this that JS tho";
-    ```
-   and/or...
-    ```python
-    print("this that Python tho")
-    ```
-   and/or...
-1. Step, with [hyperlink](https://xkcd.com)s...
-- create table tbl1(one text, two int);
- - tbl1 is the name of the table, one and two are column names, and the text/int are object types
-|  one   | two |
-|--------|-----|
-| hello! | 3   |
-| goof   | 403 |
 
 ### Resources
 * [sqlite official documentation](https://www.sqlite.org/cli.html)
-* thing2
 
 ---
 
-Accurate as of (last update): 2022-mm-dd
-
-#### Contributors:  
-Verit Li, pd8  
-Justin Mohabir, pd8  
-Brian Yang, pd8  
-
-
-
-
-
-
-
-# how-to :: sqaoeoiegr
----
-## Overview
-
-- create table tbl1(one text, two int);
- - tbl1 is the name of the table, one and two are column names, and the text/int are object types
-|  one   | two |
-|--------|-----|
-| hello! | 3   |
-| goof   | 403 |
-
-- We can use different output types to display tables, with .mode csv/markdown
-- Display by using 
- -  select * from tbl1;
-- JSON appears to be a list of python dictionaries 
-### Estimated Time Cost: 0.5 hrs 
-
-### Prerequisites:
-
+Accurate as of (last update): 2022-10-24
 
 #### Contributors:  
 Verit Li, pd8  
