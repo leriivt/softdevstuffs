@@ -28,7 +28,8 @@ Allows organization of relational databases
 	select * from <TABLE_NAME>;
 	```
 1. you can change the format you output the table in with `.mode <OUTPUT_FORMAT>`
-> output formats include: ascii, box, csv, column, html, insert, json, line, list, markdown, quote, table, tabs, and tcl
+	> output formats include: ascii, box, csv, column, html, insert, json, line, list, markdown, quote, table, tabs, and tcl
+	
 	1. csv example:
 		```
 		hello!,10
@@ -45,13 +46,14 @@ Allows organization of relational databases
 		```
 	3. box example:
 		```
-		┌─────────┬─────┐                                                                                                       
-		│   one   │ two │                                                                                                      
-		├─────────┼─────┤                                                                                                       
-		│ hello!  │ 10  │                                                                                                       
-		│ goodbye │ 20  │                                                                                                      
-		└─────────┴─────┘  
+		┌─────────┬─────┐                                                                                                         
+		│   one   │ two │                                                                                                        
+		├─────────┼─────┤                                                                                                           
+		│ hello!  │ 10  │                                                                                                         
+		│ goodbye │ 20  │                                                                                                        
+		└─────────┴─────┘    
 		```
+
 1. to see a list of tables in the database use the command `.tables`
 
 			
