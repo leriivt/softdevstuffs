@@ -15,6 +15,7 @@ Why we care, what this will allow us to do, etc...
 	``` 
 	sqlite3 <DATABASE_NAME>
 	```
+	1. y
 	
 1. Step, with `inline code`, and/or...
 1. Step, with
