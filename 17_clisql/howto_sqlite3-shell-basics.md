@@ -46,12 +46,12 @@ Allows organization of relational databases
 		```
 	3. box example:
 		```
-		┌─────────┬─────┐                                                                                                         
-		│   one   │ two │                                                                                                        
-		├─────────┼─────┤                                                                                                           
-		│ hello!  │ 10  │                                                                                                         
-		│ goodbye │ 20  │                                                                                                        
-		└─────────┴─────┘    
+		┌─────────┬─────┐
+		│   one   │ two │
+		├─────────┼─────┤
+		│ hello!  │ 10  │
+		│ goodbye │ 20  │
+		└─────────┴─────┘
 		```
 
 1. to see a list of tables in the database use the command `.tables`
