@@ -23,6 +23,10 @@ Allows organization of relational databases
 			...
 		);
 		```
+1. to insert items into the table use the format:
+	```
+	insert into <TABLE_NAME> values(<ITEM_0>,<ITEM_1>,...);
+	```
 1. to view all the contents of a table, use the command:
 	```
 	select * from <TABLE_NAME>;
