@@ -22,18 +22,20 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 #command = ""          # test SQL stmt in sqlite3 shell, save as string
 #c.execute(command)    # run SQL statement
 
-with open('students.csv', "r") as student:  #creates a file object allows reading into
-   reader = csv.DictReader(student) #creates a iterable object where each row is a dictionary with headings as keys
-   c.execute("create table students(name TEXT, age INTEGER, id INTEGER);")
-   for row in reader:
-   	c.execute("insert into students values('" + row['name']+"'," +row['age']+ "," +row['id']+");")
+with open('students.csv', "r") as students_csv:  #creates a file object allows reading into
+    reader = csv.DictReader(students_csv) #creates a iterable object where each row is a dictionary with headings as keys
+    students_table = c.execute("create table students(name TEXT, age INTEGER, id INTEGER);")
+    for row in reader:
+        students_table.execute("insert into students values(?, ?, ?)", (row['name'], row['age'], row['id']))
+        #c.execute("insert into students values('" + row['name']+"'," +row['age']+ "," +row['id']+");")
     
 
-with open('courses.csv', "r") as course:
-   reader2 = csv.DictReader(course)
-   c.execute("create table courses(code TEXT, mark INTEGER, id INTEGER);")
-   for row in reader2:
-       c.execute("insert into courses values('" + row['code']+"'," +row['mark']+ "," +row['id']+");")
+with open('courses.csv', "r") as courses_csv:
+    reader2 = csv.DictReader(courses_csv)
+    courses_table = c.execute("create table courses(code TEXT, mark INTEGER, id INTEGER);")
+    for row in reader2:
+        courses_table.execute("insert into courses values(?, ?, ?)", (row['code'], row['mark'], row['id']))
+        #c.execute("insert into courses values('" + row['code']+"'," +row['mark']+ "," +row['id']+");")
     
 
 
