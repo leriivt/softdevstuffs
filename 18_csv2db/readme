@@ -1,0 +1,16 @@
+Verit Li, Brian Yang, Justin Mohabir  
+Team: Uh?  
+SoftDev  
+K18: csv2db
+2022-10-25
+time spent: .6  
+
+Disco: 
+- We have to have everything within the execute string verbatim as how the command is in the sql shell
+- Spelling counts
+- open function creates a file object 
+- dictReader creates a iterable object where each row is a dictionary with headings as keys
+- execute takes a string as an input and runs it in the sqlite shell
+- 
+QCC:
+- Is there a cleaner way to use the execute function in python?
