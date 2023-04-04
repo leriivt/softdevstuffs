@@ -1,13 +1,15 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-SoftDev pd0
+Team Crispy Elevator :: Verit Li, Johnathan
+SoftDev pd7
 K27 -- Basic functions in JavaScript
 2023-04-03t
 
 DISCO
 -----------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____
-* ...
+* Ooooh, to establish a funciton in JavaScript you start with the word 
+  "funciton" instead of "define" like scheme
+* Aaah-haa!  creating a function in JavaScript doesn't require 
+  "lambda" like in scheme
+* JavaScript syntax very much like Java
 =================================================================
 
 QCC
