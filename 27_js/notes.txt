@@ -1,4 +1,4 @@
-Team Crispy Elevator :: Verit Li, Johnathan
+Team Crispy Elevator :: Verit Li, Johnathan Song
 SoftDev pd7
 K27 -- Basic functions in JavaScript
 2023-04-03t
