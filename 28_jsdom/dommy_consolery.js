@@ -17,10 +17,10 @@
    (delete this block comment once you are done)
 */
 
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
-// SoftDev pd0
+// Team Crispy Elevator :: Verit Li, Johnathan Song
+// SoftDev pd7
 // K28 -- Getting more comfortable with the dev console and the DOM
-// 2023-04-05w
+// 2023-04-17m
 // --------------------------------------------------
 
 
@@ -95,11 +95,44 @@ var stripe = function() {
     }
   }
 };
+//for all black items in the list starting at top,
+//see what color the previous item is
+//if previous is blue, color self red
+//if previous is red, color self blue
+
 
 //insert your implementations here for...
 // FIB
+var fib = function(n){
+  if (n == 0) {
+      return 0
+  }
+  else if (n == 1) {
+      return 1
+  }
+  else {
+      return fib(n - 1) + fib(n - 2)
+  }
+}
+
 // FAC
+var fact = function(n){
+  if (n < 2) {
+      return 1
+  }
+  else { 
+      return (n * (fact (n - 1)))
+  }
+}
+
 // GCD
+var gcd = function(a, b) {
+  if (a % b === 0){
+    return b;
+  }
+  return gcd(b, a%b);
+}
+
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.

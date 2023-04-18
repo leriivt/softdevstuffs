@@ -1,0 +1,17 @@
+Team Crispy Elevator :: Verit Li, Johnathan Song
+SoftDev pd7
+K28 -- Manipulating the DOM
+2023-04-17m
+
+DISCO
+-----------------------------------------------------------------
+* you can assign a variable to a function in JavaScript
+* When adding an additional copypasta of the original list in index.html
+and addItem() is used, only first list changes
+* addItem() will not work if there isn't a list with an id of "thelist"
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* how do you call a JavaScript function in an html file?
+=================================================================
