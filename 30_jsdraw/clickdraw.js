@@ -1,5 +1,5 @@
 //retrieve node in DOM via ID
-var c = Document.getContext("Slate")
+var c = Document.getContext("slate")
 
 //instantiate a CanvasRenderingContext2D object
 var ctx = c.getContext("2d");
@@ -41,8 +41,10 @@ var wipeCanvas = () => {
 }
 
 c.addEventListener("click", draw);
-var bToggler = document. ;
-bToggler. ;
-var clearB = ;
-clearB.;
+
+var bToggler = document.getElementById("buttonToggle");
+bToggler.addEventListener("click", toggleMode);
+
+var clearB = document.getElementById("buttonClear");
+clearB.addEventListener("click", wipeCanvas);
 
