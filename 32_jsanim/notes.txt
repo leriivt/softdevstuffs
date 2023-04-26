@@ -1,11 +1,10 @@
-Team PreView :: Prattay Dey, Verit Li
+Team Crispy Elevator :: Verit Li, Johnathan Song
 SoftDev pd07
-K31 -- canvas based JS animation
-2023-04-25t
+K32 -- bouncy dvd on canvas
+2023-04-26w
 
 DISCOS:
-- .width and .height can get width and height of a canvas
-- requestAnimationFrame() returns an ID that can be used 
-  with cancelAnimationFrame() to cancel
+- Math.random() does not take parameters but can be multiplied to increase range
+- you can declare a function within function declaration
 
 QCCs:

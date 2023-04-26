@@ -1,7 +1,7 @@
-// Team PreView :: Prattay Dey, Verit Li
+// Team Crispy Elevator :: Verit Li, Johnathan Song
 // SoftDev pd07
-// K31 -- canvas based JS animation
-// 2023-04-25t
+// K32 -- bouncy dvd on canvas
+// 2023-04-26w
 
 var c = document.getElementById("playground");
 var dotButton = document.getElementById("buttonCircle");
