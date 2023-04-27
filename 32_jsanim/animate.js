@@ -16,7 +16,9 @@ ctx.fillStyle = "#00ffff";
 var requestID;
 
 var clear = (e) => {
-    //console.log("wiping canvas...")
+    //e.preventDefault();
+
+    console.log("wiping canvas...")
     ctx.clearRect(0,0,c.clientWidth,c.clientHeight)
     //console.log("ET VIOLA.  eh?")
 }
