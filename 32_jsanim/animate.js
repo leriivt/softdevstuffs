@@ -16,6 +16,8 @@ ctx.fillStyle = "#00ffff";
 var requestID;
 
 var clear = (e) => {
+    //e.preventDefault();
+
     console.log("wiping canvas...")
     ctx.clearRect(0,0,c.clientWidth,c.clientHeight)
     console.log("ET VIOLA.  eh?")
@@ -24,16 +26,16 @@ var clear = (e) => {
 var dvdLogoSetup = function() {
     window.cancelAnimationFrame(requestID);
 
-    var rectWidth = 600;
-    var rectHeight = 400;
+    var rectWidth = 60;
+    var rectHeight = 40;
 
-    var rectX = Math.random(c.width - rectWidth);
-    var rectY = Math.random(c.height - rectHeight);
+    var rectX = Math.floor(Math.random() * (c.width - rectWidth));
+    var rectY = Math.floor(Math.random() * (c.height - rectHeight));
 
     var xVel = 1;
     var yVel = 1;
 
-    var logo = newImage();
+    var logo = new Image();
     logo.src = "logo_dvd.jpg";
 
     var dvdLogo = function() {
