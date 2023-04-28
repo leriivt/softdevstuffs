@@ -4,4 +4,19 @@ K33 -- JS Bubble & Squeak
 2023-04-27Th
 
 Event capturing moves from the top of the DOM tree downwards towards its target (the first event that has useCapture=true) and directs it to the listener 
+By default event capturing is set to false.
+"This is like event bubbling but the order is reversed: 
+so instead of the event firing first on the innermost element targeted, 
+and then on successively less nested elements,
+ the event fires first on the least nested element, 
+ and then on successively more nested elements, 
+ until the target is reached."
+
+**Do all events that have capture set to true go first before those that dont??
+
+
 Event bubbling moves from the bottom of the DOM tree upwards towards its target and directs it to the listener.
+" event bubbles up from the innermost element that was clicked. "
+
+- event.stopPropagation() stops bubbling up to other elements
+- it is possible to click only the table
