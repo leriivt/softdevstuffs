@@ -1,0 +1,7 @@
+Team PreView :: Prattay Dey, Verit Li
+SoftDev pd07
+K33 -- JS Bubble & Squeak
+2023-04-27Th
+
+Event capturing moves from the top of the DOM tree downwards towards its target (the first event that has useCapture=true) and directs it to the listener 
+Event bubbling moves from the bottom of the DOM tree upwards towards its target and directs it to the listener.
